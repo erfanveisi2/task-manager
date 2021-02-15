@@ -18,16 +18,16 @@ header {
     height: 40px;
 }
 
-.top-header-l-se {
+.top-header-sec {
     height: 100%;
 }
 
-.top-ul-r {
+.top-ul {
     height: 100%;
     display: inline-block;
 }
 
-.top-li-r {
+.top-li {
     display: inline-block;
     height: 80%;
     margin-left: 5px;
