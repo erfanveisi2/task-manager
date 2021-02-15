@@ -61,3 +61,8 @@ header {
     outline: none;
     color: white;
 }
+
+.logo {
+    height: 80%;
+    margin: 4px 30%;
+}
