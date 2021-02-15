@@ -71,3 +71,9 @@ header {
     margin: 4px 30%;
     opacity: 0.6;
 }
+
+.border {
+    color: #4d95bf;
+    display: inline-block;
+    font-size: 20px;
+}
