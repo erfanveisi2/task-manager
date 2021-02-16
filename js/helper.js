@@ -1,7 +1,7 @@
 /**
  * @returns {HTMLElement}
  * @param {String} tagName 
- * @param {*Object} attribute 
+ * @param {Object} attribute 
  * @param {HTMLElement | String | Array} content 
  */
 
@@ -13,7 +13,7 @@ function createElement(tagName, attribute, content) {
         el.setAttribute(key, attribute[key])
     }
 
-    if (typeof content !== 'undefined') {
+    if (content instanceof HTMLElement) {
         el.appendChild(content)
     } else {
         el.innerText = content
