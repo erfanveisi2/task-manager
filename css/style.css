@@ -136,15 +136,16 @@ header {
 .add-task {
     background-color: white;
     height: 100%;
-    width: 100px;
+    width: 150px;
     border-radius: 3px;
     border: 0px;
     outline: none;
     background-color: #3d99ce;
+    color: white;
 }
 
 .add-task:hover {
-    background-color: #3d99ce;
+    background-color: #42a7e2;
 }
 
 .add-task-inp {
