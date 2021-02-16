@@ -77,3 +77,91 @@ header {
     display: inline-block;
     font-size: 20px;
 }
+
+.main-task {
+    display: contents;
+}
+
+.task {
+    width: 250px;
+    display: inline-grid;
+    background-color: white;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.title {
+    height: 30px;
+}
+
+.title-h3,
+.menuicon {
+    margin-top: 5px;
+    color: rgb(141, 141, 141);
+}
+
+.works {
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgb(214, 214, 214);
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: rgb(99, 99, 99);
+}
+
+.works-note {
+    margin-left: 10px;
+}
+
+.add-work-btn,
+.add-work-inp {
+    height: 30px;
+    outline: none;
+    border: 0px;
+    border-top: 1px solid rgb(214, 214, 214);
+    color: rgb(141, 141, 141);
+}
+
+.add-work-btn:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+.main-add-task {
+    display: inline-block;
+    height: 30px;
+}
+
+.add-task {
+    background-color: white;
+    height: 100%;
+    width: 100px;
+    border-radius: 3px;
+    border: 0px;
+    outline: none;
+    background-color: #3d99ce;
+}
+
+.add-task:hover {
+    background-color: #3d99ce;
+}
+
+.add-task-inp {
+    background-color: white;
+    height: 100%;
+    width: 100px;
+    border-radius: 3px;
+    border: 0px;
+    outline: none;
+    width: 200px;
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
