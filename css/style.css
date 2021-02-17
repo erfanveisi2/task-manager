@@ -115,6 +115,10 @@ header {
     margin-left: 10px;
 }
 
+.add-work-div {
+    display: contents;
+}
+
 .add-work-btn,
 .add-work-inp {
     height: 30px;
