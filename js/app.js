@@ -3,5 +3,5 @@ function addTaskBtn() {
 }
 
 function addTaskInp() {
-    return createElement('input', { class: 'add-task-inp', placeholder: 'Enter list title...' })
+    return createElement('input', { class: 'add-task-inp hidden', placeholder: 'Enter list title...' })
 }

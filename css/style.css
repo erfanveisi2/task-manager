@@ -86,7 +86,7 @@ header {
     width: 250px;
     display: inline-grid;
     background-color: white;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 10px;
 }
 
@@ -122,6 +122,7 @@ header {
     border: 0px;
     border-top: 1px solid rgb(214, 214, 214);
     color: rgb(141, 141, 141);
+    text-align: left;
 }
 
 .add-work-btn:hover {
@@ -134,7 +135,6 @@ header {
 }
 
 .add-task {
-    background-color: white;
     height: 100%;
     width: 150px;
     border-radius: 3px;
@@ -149,7 +149,6 @@ header {
 }
 
 .add-task-inp {
-    background-color: white;
     height: 100%;
     width: 100px;
     border-radius: 3px;
