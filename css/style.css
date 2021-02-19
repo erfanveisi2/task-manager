@@ -39,6 +39,10 @@ header {
     border-radius: 3px;
 }
 
+.top-li:hover {
+    background-color: #56a7d6;
+}
+
 .tr-logo {
     margin-right: 3px
 }
@@ -70,6 +74,10 @@ header {
     height: 80%;
     margin: 4px 30%;
     opacity: 0.6;
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 .border {
