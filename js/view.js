@@ -15,7 +15,6 @@ function dyAddTask() {
     var inp = document.querySelector('.add-task-inp')
 
     sec.addEventListener('click', () => {
-        btn.classList.remove('show')
         btn.classList.add('hidden')
         inp.classList.remove('hidden')
         inp.classList.add('show')
@@ -26,8 +25,9 @@ function dyAddTask() {
         if (event.keyCode === 13) {
             inp.classList.remove('show')
             inp.classList.add('hidden')
+            inp.value = ''
             btn.classList.remove('hidden')
-            btn.classList.add('show')
+
         }
     })
 }
