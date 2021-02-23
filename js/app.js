@@ -8,12 +8,14 @@ function addTaskInp() {
 
 function task() {
 
+    var inp = document.querySelector('.add-task-inp')
+
     var mainDiv = createElement('div', { class: 'task' }, '')
     var titleDiv = createElement('div', { class: 'title' }, '')
-    var titleH3 = createElement('h3', { class: 'title-h3 left' })
+    var titleH3 = createElement('h3', { class: 'title-h3 left' }, inp.value)
     var titleIcon = createElement('i', { class: 'fas fa-ellipsis-h menuicon right' }, '')
     var worksDiv = createElement('div', { class: 'works' }, '')
-    var worksNote = createElement('p', { class: 'works-note' })
+    var worksNote = createElement('p', { class: 'works-note' }, )
     var addWorkDiv = createElement('div', { class: 'add-work-div' }, '')
     var addWorkBtn = createElement('button', { class: 'add-work-btn show' }, 'Add another card')
     var addWorkIcon = createElement('i', { class: 'fas fa-plus' }, '')

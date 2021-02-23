@@ -32,9 +32,9 @@ function dyAddTask() {
         if (event.keyCode === 13) {
             inp.classList.remove('show')
             inp.classList.add('hidden')
-            inp.value = ''
             btn.classList.remove('hidden')
             addWork()
+            inp.value = ''
 
         }
     })
