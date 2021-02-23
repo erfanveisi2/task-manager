@@ -9,6 +9,13 @@ function addTask() {
 }
 addTask()
 
+function addWork() {
+
+    var sec = document.querySelector('.main-task')
+
+    sec.appendChild(task())
+}
+
 function dyAddTask() {
     var sec = document.querySelector('.main-add-task')
     var btn = document.querySelector('.add-task')
@@ -27,6 +34,7 @@ function dyAddTask() {
             inp.classList.add('hidden')
             inp.value = ''
             btn.classList.remove('hidden')
+            addWork()
 
         }
     })

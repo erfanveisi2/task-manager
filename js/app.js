@@ -33,4 +33,3 @@ function task() {
 
     return mainDiv
 }
-task()
