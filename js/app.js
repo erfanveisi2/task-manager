@@ -6,6 +6,20 @@ function addTaskInp() {
     return createElement('input', { class: 'add-task-inp hidden', placeholder: 'Enter list title...' })
 }
 
+function newTasks() {
+
+    var addWorkDiv = createElement('div', { class: 'add-work-div' }, '')
+    var addWorkBtn = createElement('button', { class: 'add-work-btn show' }, 'Add another card')
+    var addWorkIcon = createElement('i', { class: 'fas fa-plus' }, '')
+    var addWorkInp = createElement('input', { class: 'add-work-inp hidden', placeholder: 'Enter a title for this card...' })
+
+    addWorkBtn.appendChild(addWorkIcon)
+    addWorkDiv.appendChild(addWorkBtn)
+    addWorkDiv.appendChild(addWorkInp)
+
+    return addWorkDiv
+}
+
 function task() {
 
     var inp = document.querySelector('.add-task-inp')
@@ -16,22 +30,15 @@ function task() {
     var titleIcon = createElement('i', { class: 'fas fa-ellipsis-h menuicon right' }, '')
     var worksDiv = createElement('div', { class: 'works' }, '')
     var worksNote = createElement('p', { class: 'works-note' }, )
-    var addWorkDiv = createElement('div', { class: 'add-work-div' }, '')
-    var addWorkBtn = createElement('button', { class: 'add-work-btn show' }, 'Add another card')
-    var addWorkIcon = createElement('i', { class: 'fas fa-plus' }, '')
-    var addWorkInp = createElement('input', { class: 'add-work-inp hidden', placeholder: 'Enter a title for this card...' })
 
 
     titleDiv.appendChild(titleH3)
     titleDiv.appendChild(titleIcon)
     worksDiv.appendChild(worksNote)
-    addWorkBtn.appendChild(addWorkIcon)
-    addWorkDiv.appendChild(addWorkBtn)
-    addWorkDiv.appendChild(addWorkInp)
 
     mainDiv.appendChild(titleDiv)
     mainDiv.appendChild(worksDiv)
-    mainDiv.appendChild(addWorkDiv)
+    mainDiv.appendChild(newTasks())
 
     return mainDiv
 }
