@@ -108,6 +108,10 @@ header {
     color: rgb(141, 141, 141);
 }
 
+.main-works {
+    display: contents;
+}
+
 .works {
     margin: 0 auto;
     width: 80%;
