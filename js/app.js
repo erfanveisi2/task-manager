@@ -1,8 +1,8 @@
-function addTaskBtn() {
+function addCardBtn() {
     return createElement('button', { class: 'add-task' }, 'Add another list')
 }
 
-function addTaskInp() {
+function addCardInp() {
     return createElement('input', { class: 'add-task-inp hidden', placeholder: 'Enter list title...' })
 }
 
