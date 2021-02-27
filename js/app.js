@@ -6,9 +6,6 @@ function addCardInp() {
     return createElement('input', { class: 'add-task-inp hidden', placeholder: 'Enter list title...' })
 }
 
-function mainDiv() {
-    return createElement('div', { class: 'task' }, '')
-}
 
 function firstSec() {
     var titleDiv = createElement('div', { class: 'title' }, '')
@@ -18,7 +15,7 @@ function firstSec() {
     titleDiv.appendChild(titleH3)
     titleDiv.appendChild(titleIcon)
 
-    return mainDiv().appendChild(titleDiv)
+    return titleDiv
 }
 
 function seSec() {
@@ -26,18 +23,18 @@ function seSec() {
     var worksNote = createElement('p', { class: 'workd-note' }, )
 
     worksDiv.appendChild(worksNote)
-    return mainDiv().appendChild(worksDiv)
+    return worksDiv
 }
 
 function thirdSec() {
-    var addWorkDiv = createElement('div', { class: 'add-work-div' }, 'Add another card')
-    var addWorkBtn = createElement('button', { class: 'add-work-btn show' })
+    var addWorkDiv = createElement('div', { class: 'add-work-div' }, '')
+    var addWorkBtn = createElement('button', { class: 'add-work-btn show' }, 'Add another card')
     var addWorkIcon = createElement('i', { class: 'fas fa-plus' }, '')
     var addWorkInp = createElement('input', { class: 'add-work-inp- hidden', placeholder: 'Enter a title for this card...' })
 
-    addWorkDiv.appendChild(addWorkIcon)
+    addWorkBtn.appendChild(addWorkIcon)
     addWorkDiv.appendChild(addWorkBtn)
     addWorkDiv.appendChild(addWorkInp)
 
-    return mainDiv().appendChild(addWorkDiv)
+    return addWorkDiv
 }
