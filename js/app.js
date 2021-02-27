@@ -12,10 +12,42 @@ function addWork() {
     var addWorkIcon = createElement('i', { class: 'fas fa-plus' }, '')
     var addWorkInp = createElement('input', { class: 'add-work-inp hidden', placeholder: 'Enter a title for this card...' })
 
+
+    addWorkDiv.addEventListener('click', () => {
+        addWorkBtn.classList.add('hidden')
+        addWorkBtn.classList.remove('show')
+        addWorkInp.classList.remove('hidden')
+        addWorkInp.classList.add('show')
+        addWorkInp.focus()
+    })
+    addWorkInp.addEventListener('keyup', (event) => {
+        if (event.keyCode === 13) {
+            addWorkInp.classList.add('hidden')
+            addWorkInp.classList.remove('show')
+            addWorkBtn.classList.remove('hidden')
+            addWorkBtn.classList.add('show')
+            mainWorks()
+            addWorkInp.value = ''
+        }
+    })
+
     addWorkBtn.appendChild(addWorkIcon)
     addWorkDiv.appendChild(addWorkBtn)
     addWorkDiv.appendChild(addWorkInp)
+
     return addWorkDiv
+}
+
+function works() {
+    var inp = document.querySelector('.add-work-inp')
+
+
+    var worksDiv = createElement('div', { class: 'works' }, '')
+    var worksNote = createElement('p', { class: 'work-note' }, inp.value)
+
+    worksDiv.appendChild(worksNote)
+
+    return worksDiv
 }
 
 function mainCard() {
@@ -25,15 +57,11 @@ function mainCard() {
     var titleDiv = createElement('div', { class: 'title' }, '')
     var titleH3 = createElement('h3', { class: 'title-h3 left' }, inp.value)
     var titleIcon = createElement('i', { class: 'fas fa-ellipsis-h menuicon right' }, '')
-    var worksDiv = createElement('div', { class: 'works' }, '')
-    var worksNote = createElement('p', { class: 'work-note' }, )
 
     titleDiv.appendChild(titleH3)
     titleDiv.appendChild(titleIcon)
-    worksDiv.appendChild(worksNote)
 
     mainDiv.appendChild(titleDiv)
-    mainDiv.appendChild(worksDiv)
     mainDiv.appendChild(addWork())
 
     return mainDiv
